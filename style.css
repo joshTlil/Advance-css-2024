@@ -1,0 +1,214 @@
+header{
+    display: flex;
+    background-color: rgb(0, 195, 255);
+}
+
+h1{
+    background-color: blueviolet;
+}
+
+nav{
+    float: right;
+    width: 1000px;
+    padding-left: 1100px;
+    padding-top: 45px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.sub{
+    background-color: aquamarine;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: red;
+}
+
+.gridLayout{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item{
+    /* border: 1px solid red; */
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* border-right: 5px solid rgb(0, 9, 128); */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* margin-left: 300px */
+    padding-right: 200px;
+}
+
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* border: 1px solid red; */
+    border-left: 5px solid rgb(0, 9, 128);
+
+}
+
+.item3{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    /* border-right: 5px solid blue; */
+    margin-top: 10px;
+}
+
+.item4{
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border: 1px solid blue;
+    margin-top: 80px;
+    /* height: 50px; */
+    width: 100px;
+}
+
+
+.workLayout{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    /* This effects item3 */
+    /* That is why it will remain at 7 */
+    /* It makes item 3 as long as the container */
+    grid-row-end: 7;
+    border-left: 5px solid blueviolet;
+    height: 900px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 400px;
+    /* row-gap: 5px;
+    column-gap: 35px; */
+}
+
+.work1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 1px dashed green;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 400px;
+    width: 720px;
+    background-image: url("work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.work2{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    /*grid-column-start: 1;
+    grid-column-end: 1;  */
+    border: 1px dashed green;
+    width: 300px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 500px; */
+    height: 150px;
+    margin-top: 20px;
+    /* margin-left: 200px; */
+    background-image: url("work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+} 
+
+.work3{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    /*grid-column-start: 1;
+    grid-column-end: 1;  */
+    border: 1px dashed blue;
+    width: 300px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 500px; */
+    height: 150px;
+    margin-top: 20px;
+    margin-left: -535px;
+    /* margin-right: 500px; */
+    background-image: url("work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+ .work4{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1; 
+    border: 1px dashed blue;
+    width: 300px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 100px; */
+    height: 150px;
+    margin-top: 10px;
+    background-image: url("work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+ .work5{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1; 
+    border: 1px solid red;
+    width: 300px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 100px; */
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 420px;
+    background-image: url("work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    
+}
+
+.info{
+    grid-row-start: 7;
+    grid-row-end: 9;
+    display: grid;
+    gap: 10px;
+    width: 10px;
+    border: 1px solid black;
+    /* justify-content: space-between */
+    margin-right: 150px;
+}
+
+.contact{
+    border: 1px solid  green;
+    display: grid;
+    grid-column-start:8;
+    grid-column-end: 10;
+    width: 1000px;
+    margin-left: 420px;
+
+}
+
+.myLink{
+    display: inline;
+    justify-content: space-between;
+}
+
+ .link1{
+ margin-right: 200px;
+}
+
+.bottomRight{
+    margin-top: 350px;
+    /* color: blue; */
+    background-color: blue;
+}
+
+.work1:hover{
+    opacity: 1;
+}
